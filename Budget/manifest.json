@@ -3,12 +3,15 @@
   "name": "Budget",
   "version": "1.0",
   "description": "Budget Extension!",
+  "options_page" : "options.html",
+
   "icons": {
     "16": "get_started16.png",
     "32": "get_started32.png",
     "48": "get_started48.png",
     "128": "get_started128.png"
   },
+
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -19,14 +22,14 @@
     }
   },
 
-  "options_page" : "options.html",
+  "background" : {
+    "scripts" : ["eventPage.js"],
+    "persistent" : false
+  },
 
   "permissions": [
     "storage",
-    "notifications"
-  ],
-
-  "web_accessible_resources": [
-    "images/get_started48.png"
+    "notifications",
+    "contextMenus"
   ]
 }

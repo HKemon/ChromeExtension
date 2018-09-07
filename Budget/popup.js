@@ -25,7 +25,7 @@ $(function () {
                         title: 'Limit reached!',
                         message: "You have crossed the limit!"
                     };
-                    chrome.notifications.create('limitNoti',notiOptions);
+                    chrome.notifications.create(notiOptions);
                 }
             });
 
