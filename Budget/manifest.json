@@ -30,6 +30,9 @@
   "permissions": [
     "storage",
     "notifications",
-    "contextMenus"
-  ]
+    "contextMenus",
+    "<all_urls>"
+  ],
+
+  "content_security_policy": "media-src 'self' https://www.reddit.com/; object-src 'self' https://www.reddit.com/; script-src 'self' https://www.reddit.com/;"
 }
